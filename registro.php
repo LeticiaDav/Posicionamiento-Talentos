@@ -24,7 +24,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Posicionamiento de Talentos | Registro de usuario</title>
+    <link rel="stylesheet" type="text/css" href="CSS/semantic.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css" integrity="sha256-wT6CFc7EKRuf7uyVfi+MQNHUzojuHN2pSw0YWFt2K5E=" crossorigin="anonymous" />
   </head>
   <body>
 
