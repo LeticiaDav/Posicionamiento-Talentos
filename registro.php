@@ -27,7 +27,7 @@ limitations under the License.
     <meta charset="utf-8">
     <title>Posicionamiento de Talentos | Registro de usuario</title>
     <link rel="stylesheet" type="text/css" href="css/semantic.css">
-    
+
     <!-- DESCOMENTAR LA LINEA DE ABAJO CUANDO EL PROYECTO ESTE EN VERSION FINAL -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"/> -->
   </head>
@@ -37,15 +37,15 @@ limitations under the License.
       <br>
       <div class="field">
         <div class="ui left icon input">
-          <i class="mail outline icon"></i>
-          <input type="nombre" name="nombre" placeholder="Nombre" autofocus="true">
+          <i class="user icon"></i>
+          <input type="nombre" name="nombre" placeholder="Nombre(s)" autofocus="true">
         </div>
       </div>
       <br>
       <div class="field">
         <div class="ui left icon input">
-          <i class="mail outline icon"></i>
-          <input type="nombre" name="nombre" placeholder="Nombre" autofocus="true">
+          <i class="user icon"></i>
+          <input type="apellido" name="apellido" placeholder="Apellido(s)" autofocus="true">
         </div>
       </div>
       <br>
