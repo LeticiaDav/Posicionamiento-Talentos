@@ -1,6 +1,6 @@
 
 <!--
-#registro.php - 1.0.0
+#registro.php - 1.0.1
 
 https://github.com/Genesisj96Dev/Posicionamiento-Talentos
 
@@ -32,57 +32,65 @@ limitations under the License.
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"/> -->
   </head>
   <body style="background-color: #F6F6F6;">
-    <div class="ui centered grid container">
+ <div class="ui centered grid container">
     <div class="row"></div>
     <div class="ui raised very padded center aligned text container segment">
       <div class="ui segment inverted nightli">
         <h2 class="ui header">Registro de Usuario</h2>
       </div>
       <br>
-      <div class="field">
+      <br>
+     <form class="ui middle aligned grid"  method="post">
+       <!-- nombre completo -->
+      <div class='ui centered aligned container' style="padding:5px;">
         <div class="ui left icon input">
           <i class="user icon"></i>
           <input type="nombre" name="nombre" placeholder="Nombre Completo" autofocus="true">
         </div>
       </div>
-      <br>
-      <div class="field">
+      <!-- correo electronico -->
+      <div class='ui centered aligned container' style="padding:5px;">
         <div class="ui left icon input">
           <i class="mail outline icon"></i>
           <input type="email" name="email" placeholder="Correo Electronico" autofocus="true">
         </div>
       </div>
-      <br>
-      <div class="field">
+      <!-- password -->
+      <div class='ui centered aligned container' style="padding:5px;">
         <div class="ui left icon input">
           <i class="lock icon"></i>
           <input type="password" name="password" placeholder="Contraseña">
         </div>
       </div>
-      <br>
-      <div class="field">
+      <!-- universidad -->
+      <div class='ui centered aligned container' style="padding:5px;">
         <div class="ui left icon input">
           <i class="university icon"></i>
           <input type="university" name="university" placeholder="Universidad" autofocus="true">
         </div>
       </div>
-      <br>
-  <div class="field">
-    <select name="perfil" class="ui selection dropdown">
-      <option value="diseñadorweb">Diseñador Web</option>
-      <option value="programador">Programador</option>
-      <option value="especialistaredes">Especialista en Redes</option>
-      <option value="especialistamovil">Especialista en Moviles</option>
-      <option value="diseñadorgrafico">Diseñador Grafico</option>
-      <option value="especialistalinux">Especialista en Linux</option>
-    </select>
-  </div>
-      <br>
-      <div class="actions">
-        <button class="big ui green button" type="submit">Registrar</button>
+      <!-- perfil profesional -->
+      <div class='ui centered aligned container' style="padding:5px;">
+        <select name="perfil" class="ui selection dropdown">
+          <option value="diseñadorweb">Diseñador Web</option>
+          <option value="programador">Programador</option>
+          <option value="especialistaredes">Especialista en Redes</option>
+          <option value="especialistamovil">Especialista en Moviles</option>
+          <option value="diseñadorgrafico">Diseñador Grafico</option>
+          <option value="especialistalinux">Especialista en Linux</option>
+        </select>
       </div>
-      <div class="ui hidden divider"></div>
-                                  ¿Ya tienes una cuenta?<a href="signup.html" class="ui"> Iniciar Sesión</a>
+      </form>
+      <br>
+      <div class='ui centered aligned container' style="padding:5px;">
+        <div class="actions">
+          <button class="ui green button" type="submit" style="width:40%;">Registrar</button>
+        </div>
+        <div class="ui hidden divider"></div>
+                                    ¿Ya tienes una cuenta?<a href="signup.html" class="ui"> Iniciar Sesión</a>
+      </div>
+      <br>
+
     </div>
   </div>
   <script src="js/semantic.min.js"></script>
