@@ -81,7 +81,7 @@ limitations under the License.
       <div class="actions">
         <button class="big ui green button" type="submit">Registrar</button>
       </div>
-      <div class="ui clearing divider"></div>
+      <div class="ui hidden divider"></div>
                                   ¿Ya tienes una cuenta?<a href="signup.html" class="ui"> Iniciar Sesión</a>
     </div>
   </div>
