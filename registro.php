@@ -31,49 +31,63 @@ limitations under the License.
     <!-- DESCOMENTAR LA LINEA DE ABAJO CUANDO EL PROYECTO ESTE EN VERSION FINAL -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"/> -->
   </head>
-  <body>
+  <body style="background-color: #F6F6F6;">
+    <div class="ui centered grid container">
+    <div class="row"></div>
     <div class="ui raised very padded center aligned text container segment">
-      <h1 class="ui header">Registro de usuario</h1>
-      <br>
-      <div class="field">
-        <div class="ui left icon input">
-          <i class="user icon"></i>
-          <input type="nombre" name="nombre" placeholder="Nombre(s)" autofocus="true">
-        </div>
+      <div class="ui segment inverted nightli">
+        <h2 class="ui header">Registro de Usuario</h2>
       </div>
       <br>
       <div class="field">
         <div class="ui left icon input">
           <i class="user icon"></i>
-          <input type="apellido" name="apellido" placeholder="Apellido(s)" autofocus="true">
+          <input type="nombre" name="nombre" placeholder="Nombre Completo" autofocus="true">
         </div>
       </div>
       <br>
       <div class="field">
         <div class="ui left icon input">
           <i class="mail outline icon"></i>
-          <input type="email" name="email" placeholder="Email Address" autofocus="true">
+          <input type="email" name="email" placeholder="Correo Electronico" autofocus="true">
         </div>
       </div>
-        <br>
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password">
-          </div></div>
-          <br>
-
-          <div class="field">
-            <div class="ui left icon input">
-              <i class="lock icon"></i>
-              <input type="password" name="password_confirmation" placeholder="Password Confirmation">
-            </div></div><br>
-
-            <div class="actions">
-              <button class=" ui large teal button" type="submit">Log in</button>
-            </div>
-            <br>
-            <p>Don't have an account? <a href="#"> Sign up </a>
-            </div>
+      <br>
+      <div class="field">
+        <div class="ui left icon input">
+          <i class="lock icon"></i>
+          <input type="password" name="password" placeholder="Contraseña">
+        </div>
+      </div>
+      <br>
+      <div class="field">
+        <div class="ui left icon input">
+          <i class="university icon"></i>
+          <input type="university" name="university" placeholder="Universidad" autofocus="true">
+        </div>
+      </div>
+      <br>
+  <div class="field">
+    <select name="perfil" class="ui selection dropdown">
+      <option value="diseñadorweb">Diseñador Web</option>
+      <option value="programador">Programador</option>
+      <option value="especialistaredes">Especialista en Redes</option>
+      <option value="especialistamovil">Especialista en Moviles</option>
+      <option value="diseñadorgrafico">Diseñador Grafico</option>
+      <option value="especialistalinux">Especialista en Linux</option>
+    </select>
+  </div>
+      <br>
+      <div class="actions">
+        <button class="big ui green button" type="submit">Registrar</button>
+      </div>
+      <div class="ui clearing divider"></div>
+                                  ¿Ya tienes una cuenta?<a href="signup.html" class="ui"> Iniciar Sesión</a>
+    </div>
+  </div>
+  <script src="js/semantic.min.js"></script>
+  <script>
+  $('.ui.dropdown').dropdown();
+  </script>
   </body>
 </html>
