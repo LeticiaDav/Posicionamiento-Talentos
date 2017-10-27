@@ -37,7 +37,7 @@ limitations under the License.
     }
 
     // Verifica si el correo del usuario a registrar existe en la base de datos.
-    function verificar($usuario){
+    function verificar($email){
       $con = conexion_db("root", "");
       $consulta = $con->prepare("select * from usuario where correo_e = :correo_e");
       $consulta->execute(array(':correo_e' => $email));
