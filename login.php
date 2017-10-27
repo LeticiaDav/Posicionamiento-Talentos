@@ -39,6 +39,7 @@ limitations under the License.
                 <h2 class="ui header">Iniciar Sesión</h2> </div>
             <!-- formulario -->
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" class="ui form" method="post" id="frm-iniciar-sesion">
+              <br>
                 <!-- correo electronico -->
                 <div class='field' style="padding:5px;">
                     <div class="ui left icon input"> <i class="mail outline icon"></i>
