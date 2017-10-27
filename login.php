@@ -19,6 +19,30 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
+
+<?php
+  session_start();
+  require('funciones.php');
+  require('clases/clases.php');
+  if(isset($_POST['iniciar'])){
+    $password = hash('sha512', $_POST['password']);
+    $datos = array(limpiar($_POST['email']), $password);
+    if(datos_vacios($datos) == false){
+      if(strpos($datos[0], " ") == false){
+        $resultados = usuario::verificar($datos[0]);
+        if(empty($resultados) == false){
+          if($datos[1] == $resultados[0]["contrase"]){
+            $_SESSION['id'] = $resultados[0]["id"];
+            $_SESSION['email'] = $resultados[0]["correo_e"];
+            header('location: index.php');
+          }
+        }
+      }
+    }
+  }
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -57,7 +81,7 @@ limitations under the License.
                 </div>
             </form>
             <div class="iniciar">
-                <div class="ui hidden divider"></div> ¿No tienes una cuenta?<a href="login.php" class="ui"> Registrar</a> </div>
+                <div class="ui hidden divider"></div> ¿No tienes una cuenta?<a href="registro.php" class="ui"> Registrar</a> </div>
         </div>
     </div>
     <script src="js/semantic.min.js"></script>
