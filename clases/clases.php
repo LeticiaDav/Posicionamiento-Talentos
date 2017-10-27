@@ -12,5 +12,13 @@
                     ':foto_perfil' => 'img/sin foto de perfil.jpg'
                 ));
     }
+
+    function verificar($usuario){
+      $con = conexion_db("root", "");
+      $consulta = $con->prepare("select * from usuario where correo_e = :correo_e");
+      $consulta->execute(array(':correo_e' => $email));
+      $resultado = $consulta->fetchAll();
+      return $resultado;
+    }
   }
  ?>
