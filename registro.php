@@ -23,6 +23,7 @@ limitations under the License.
 
 <?php
   require('funciones.php');
+  require('clases/clases.php');
   $error = "";
   if(isset($_POST['registrar'])){
     $password = hash('sha512',$_POST['password']);
@@ -35,8 +36,14 @@ limitations under the License.
     );
     if (datos_vacios($datos) == false) {
       $datos = limpiar($datos);
-      foreach ($datos as $dato) {
-        echo $dato."<br>";
+      if(!strpos($datos[1], " ")){
+        if(empty(usuario::verificar($datos[1]))){
+          usuario::registrar($datos);
+        }else{
+          $error .= "El correo ingresado ya existe";
+        }
+      }else{
+        $error .= "Correo con espacios";
       }
     }else{
       $error .= "Se encuentran campos vacios";
