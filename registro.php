@@ -22,8 +22,9 @@ limitations under the License.
 -->
 
 <?php
+  require('funciones.php');
+  $error = "";
   if(isset($_POST['registrar'])){
-    echo "Hola mundo";
     $datos = array(
       $_POST['nombre'],
       $_POST['email'],
@@ -31,8 +32,13 @@ limitations under the License.
       $_POST['university'],
       $_POST['perfil']
     );
-    foreach ($datos as $dato) {
-      echo $dato;
+    if (datos_vacios($datos) == false) {
+      $datos = limpiar($datos);
+      foreach ($datos as $dato) {
+        echo $dato."<br>";
+      }
+    }else{
+      $error .= "Se encuentran campos vacios";
     }
   }
 ?>
@@ -59,7 +65,7 @@ limitations under the License.
       </div>
       <br>
       <br>
-     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" class="ui middle aligned grid" method="post">
+     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" class="ui form middle aligned grid" method="post" id="frm-registro">
        <!-- nombre completo -->
       <div class='ui centered aligned container' style="padding:5px;">
         <div class="ui left icon input">
@@ -91,6 +97,7 @@ limitations under the License.
       <!-- perfil profesional -->
       <div class='ui centered aligned container' style="padding:5px;">
         <select name="perfil" class="ui selection dropdown">
+          <option value="">Perfil Profesional</option>
           <option value="diseñadorweb">Diseñador Web</option>
           <option value="programador">Programador</option>
           <option value="especialistaredes">Especialista en Redes</option>
@@ -107,11 +114,14 @@ limitations under the License.
       </div>
       </form>
       <br>
+      <br>
+      <?php if(!empty($error)): ?>
+        <div class="ui error message"><?php echo $error?></div>
+      <?php endif; ?>
       <div class="registrar">
         <div class="ui hidden divider"></div>
         ¿Ya tienes una cuenta?<a href="login.php" class="ui"> Iniciar Sesión</a>
       </div>
-      <br>
     </div>
   </div>
   <script src="js/semantic.min.js"></script>
