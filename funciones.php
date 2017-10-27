@@ -22,6 +22,15 @@ limitations under the License.
 -->
 
 <?php
+  function conexion_db($usuario, $contra){
+    try {
+      $con = new PDO('mysql:host=localhost; dbname=bd_pos_talent', $usuario, $contra);
+      return $con;
+    } catch (PDOException $e) {
+        return $e->getMessage();    
+    }
+  }
+
   function datos_vacios($datos){
     $vacio = false;
     $tamanio = count($datos);
@@ -34,7 +43,7 @@ limitations under the License.
     return $vacio;
   }
 
-  function limpiar(){
+  function limpiar($datos){
     $tamanio = count($datos);
     for($i = 0; $i < $tamanio; $i++){
       if($i != 2){
