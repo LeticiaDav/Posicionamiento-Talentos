@@ -25,10 +25,11 @@ limitations under the License.
   require('funciones.php');
   $error = "";
   if(isset($_POST['registrar'])){
+    $password = hash('sha512',$_POST['password']);
     $datos = array(
       $_POST['nombre'],
       $_POST['email'],
-      $_POST['password'],
+      $password,
       $_POST['university'],
       $_POST['perfil']
     );
