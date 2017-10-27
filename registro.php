@@ -21,12 +21,31 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
+<?php
+  if(isset($_POST['registrar'])){
+    echo "Hola mundo";
+    $datos = array(
+      $_POST['nombre'],
+      $_POST['email'],
+      $_POST['password'],
+      $_POST['university'],
+      $_POST['perfil']
+    );
+    foreach ($datos as $dato) {
+      echo $dato;
+    }
+  }
+?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Posicionamiento de Talentos | Registro de usuario</title>
     <link rel="stylesheet" type="text/css" href="css/semantic.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
 
     <!-- DESCOMENTAR LA LINEA DE ABAJO CUANDO EL PROYECTO ESTE EN VERSION FINAL -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"/> -->
@@ -40,7 +59,7 @@ limitations under the License.
       </div>
       <br>
       <br>
-     <form class="ui middle aligned grid"  method="post">
+     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" class="ui middle aligned grid" method="post">
        <!-- nombre completo -->
       <div class='ui centered aligned container' style="padding:5px;">
         <div class="ui left icon input">
@@ -79,18 +98,20 @@ limitations under the License.
           <option value="diseñadorgrafico">Diseñador Grafico</option>
           <option value="especialistalinux">Especialista en Linux</option>
         </select>
+        <!-- boton de registrar -->
+        <br>
+        <br>
+        <div class="actions">
+          <button class="ui green button" type="submit" value="Registrar" name="registrar"  style="width:40%;">Registrar</button>
+        </div>
       </div>
       </form>
       <br>
-      <div class='ui centered aligned container' style="padding:5px;">
-        <div class="actions">
-          <button class="ui green button" type="submit" style="width:40%;">Registrar</button>
-        </div>
+      <div class="registrar">
         <div class="ui hidden divider"></div>
-                                    ¿Ya tienes una cuenta?<a href="signup.html" class="ui"> Iniciar Sesión</a>
+        ¿Ya tienes una cuenta?<a href="login.php" class="ui"> Iniciar Sesión</a>
       </div>
       <br>
-
     </div>
   </div>
   <script src="js/semantic.min.js"></script>
