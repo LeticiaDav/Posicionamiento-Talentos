@@ -39,6 +39,10 @@ html {
   color: #ffffff;
 }
 
+.white {
+  color: white;
+}
+
 body {
     overflow-x: hidden;
 }
