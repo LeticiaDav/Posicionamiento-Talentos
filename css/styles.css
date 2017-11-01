@@ -30,6 +30,15 @@ html {
     min-height: 100%;
 }
 
+#mainNav{
+  /*color de la barra de navegacion*/
+  background-color: #1B1C1D;
+}
+
+#messagesDropdown{
+  color: #ffffff;
+}
+
 body {
     overflow-x: hidden;
 }
