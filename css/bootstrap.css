@@ -3605,15 +3605,15 @@ tbody.collapse.show {
 }
 
 .navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
 }
 
 .navbar-dark .navbar-brand {
-  color: white;
+  color: #ffffff;
 }
 
 .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
-  color: white;
+  color: #ffffff;
 }
 
 .navbar-dark .navbar-nav .nav-link {
