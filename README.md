@@ -1,0 +1,2 @@
+# Posicionamiento-Talentos
+Posicionamiento de Talentos es una plataforma web donde se darán a conocer los proyectos en los que los usuarios han participado en LABSOL y además las habilidades que poseen. Esto será posible ya que los usuarios se podrán registrar y enviar solicitudes de amistad a otros usuarios, una vez aceptados podrán validar las habilidades de sus amigos, crear noticias, comentarlas, además de darles me gusta.
