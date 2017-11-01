@@ -23,6 +23,6 @@ limitations under the License.
 <?php
 session_start();
 require('funciones.php');
-//verificar_sesion(); //Verificar si hay una sesion iniciada o no
+verificar_sesion(); //Verificar si hay una sesion iniciada o no
 //echo $_SESSION['email'];
 ?>
