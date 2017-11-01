@@ -32,7 +32,7 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
 
 <head>
   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Posicionamiento de talentos</title>
   <script src="js/jquery-3.2.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
@@ -51,8 +51,17 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
     <a class="navbar-brand mb-0 h1" href="#"><span class="white">Posicionamiento de Talentos</span></a>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <form class="form-inline mr-5">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Search for...">
+            </div>
+          </form>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="SolicitudesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-fw fa-inverse fa-user-plus"></i>
             Solicitudes
           </a>
@@ -60,9 +69,8 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
             <h6 class="dropdown-header">Solicitudes De Amistad:</h6>
           </div>
         </li>
-
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="NotificacionesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-fw fa-inverse fa-bell"></i>
             Notificaciones
           </a>
@@ -70,13 +78,16 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
             <h6 class="dropdown-header">Notificaciones Nuevas:</h6>
           </div>
         </li>
-
-        <li class="nav-item">
-          <form class="form-inline my-2 my-lg-0 mr-lg-2">
-            <div class="input-group">
-              <input class="form-control" type="text" placeholder="Search for...">
-            </div>
-          </form>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-5" href="#" id="ConfDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Configuracion
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Configurar Cuenta</a>
+            <a class="dropdown-item" href="#">Configurar Perfil</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Cerrar Sesion</a>
+          </div>
         </li>
       </ul>
     </div>
