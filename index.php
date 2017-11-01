@@ -52,9 +52,9 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <form class="form-inline mr-5">
+          <form class="form-inline mr-5" id="buscar">
             <div class="input-group">
-              <input class="form-control" type="text" placeholder="Search for...">
+              <input class="form-control" type="text" placeholder="Buscar Amigos">
             </div>
           </form>
         </li>
