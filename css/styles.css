@@ -52,6 +52,13 @@ html {
   text-align: center;
 }
 
+.badge-notify {
+  background: red;
+  margin-top: 1px;
+  margin-left: 2px;
+  height: 1.7em;
+}
+
 .white {
   color: white;
 }

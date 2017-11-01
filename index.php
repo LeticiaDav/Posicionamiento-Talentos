@@ -64,6 +64,7 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
           <a class="nav-link dropdown-toggle mr-lg-2" id="SolicitudesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-fw fa-inverse fa-user-plus"></i>
             Solicitudes
+            <span class="badge badge-notify">7</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="SolicitudesDropdown">
             <h6 class="dropdown-header">Solicitudes De Amistad:</h6>
@@ -73,6 +74,7 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
           <a class="nav-link dropdown-toggle mr-lg-2" id="NotificacionesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-fw fa-inverse fa-bell"></i>
             Notificaciones
+            <span class="badge badge-notify">7</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="messagesDropdown">
             <h6 class="dropdown-header">Notificaciones Nuevas:</h6>
