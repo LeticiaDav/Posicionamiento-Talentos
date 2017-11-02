@@ -81,14 +81,14 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle mr-lg-5" href="#" id="ConfDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle mr-lg-5" id="ConfDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Configuracion
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Configurar Cuenta</a>
             <a class="dropdown-item" href="#">Configurar Perfil</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Cerrar Sesion</a>
+            <a class="dropdown-item" href="signout.php">Cerrar Sesion</a>
           </div>
         </li>
       </ul>
