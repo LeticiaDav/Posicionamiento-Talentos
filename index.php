@@ -68,6 +68,15 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
           </a>
           <div class="dropdown-menu" aria-labelledby="SolicitudesDropdown">
             <h6 class="dropdown-header">Solicitudes De Amistad:</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="perfil.php">
+              <strong>Jane Doe</strong>
+              <div class="dropdown-message small">Hola</div>
+              <ul id="botones" style="background-color:red;">
+                <li style="background-color:blue;"><a href="#" class="btn btn-sm btn-success" role="button">Aceptar</a></li>
+                <li><a href="#" class="btn btn-sm btn-info" role="button">Rechazar</a></li>
+              </ul>
+            </a>
           </div>
         </li>
         <li class="nav-item dropdown">
