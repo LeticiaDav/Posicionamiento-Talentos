@@ -148,7 +148,8 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
         </div>
         <div class="card-footer" id="pie-card-comentarios">
           <form class="comentario" action="<?php echo $_SERVER[PHP_SELF]; ?>" method="post">
-            <input class="form-control add-comment-input" placeholder="Add a comment..." type="text">
+            <input class="form-control add-comment-input" name="comentario" placeholder="Agrega un comentario..." type="text">
+            <input type="hidden" name="CodPost" value="">
           </form>
           <!-- <ul class="comments-list">
             <li class="comment">
