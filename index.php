@@ -117,20 +117,12 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
       </div>
       <div class="card-body">
         <form action="<?php echo $_SERVER[PHP_SELF]; ?>" enctype="multipart/form-data" method="post">
-          <div class="form-group">
-            <textarea class="text-comentario" rows="2" id="comment"></textarea>
-          </div>
+            <textarea class="text-comentario" rows="2" name="comentario" id="comentario"></textarea>
         </form>
       </div>
         <div class="card-footer" id="pie-card">
-            <button class="btn btn-danger pull-right">Post</button>
-            <ul class="nav nav-pills">
-                <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
-                <li><a href="#"><i class="fa fa-camera"></i></a></li>
-                <li><a href="#"><i class=" fa fa-film"></i></a></li>
-                <li><a href="#"><i class="fa fa-microphone"></i></a>
-                </li>
-            </ul>
+            <button class="btn btn-danger pull-right">Publicar</button>
+            <a href="#"><i class="fa fa-file-image-o" aria-hidden="true"></a>
         </div>
     </div>
 </section>

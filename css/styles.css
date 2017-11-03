@@ -50,6 +50,12 @@ html {
   color: #000000;
 }
 
+#pie-card > a{
+  /*color de la cabecera del card*/
+  background-color: #fff !important;
+  color: #000000;
+}
+
 .text-comentario{
   width: 100%;
   border: none;
