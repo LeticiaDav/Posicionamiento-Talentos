@@ -116,7 +116,7 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
         </table>
       </div>
       <div class="card-body">
-        <form>
+        <form action="<?php echo $_SERVER[PHP_SELF]; ?>" enctype="multipart/form-data" method="post">
           <div class="form-group">
             <textarea class="text-comentario" rows="2" id="comment"></textarea>
           </div>
