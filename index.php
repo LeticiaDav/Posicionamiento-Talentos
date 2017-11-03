@@ -105,7 +105,7 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
     </div>
   </nav>
 
-<section class="publicacion">
+  <section class="publicacion">
     <div class="card">
       <div class="card-header" id="cabecera-card">
         <table>
@@ -117,15 +117,16 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
       </div>
       <div class="card-body">
         <form action="<?php echo $_SERVER[PHP_SELF]; ?>" enctype="multipart/form-data" method="post">
-            <textarea class="text-comentario" rows="2" name="comentario" id="comentario"></textarea>
+          <textarea class="text-comentario" rows="2" name="comentario" id="comentario" placeholder="Agregar una noticia"></textarea>
         </form>
       </div>
-        <div class="card-footer" id="pie-card">
-            <button class="btn btn-danger pull-right">Publicar</button>
-            <a href="#"><i class="fa fa-file-image-o" aria-hidden="true"></a>
-        </div>
+      <div class="card-footer" id="pie-card">
+        <label for="archivo" class="fa fa-file-image-o fa-lg" style="cursor:pointer; margin-top:10px;"></label>
+        <input type="file" name="archivo" id="archivo" style="display:none;">
+        <button class="btn btn-success pull-right" name="publicar">Publicar</button>
+      </div>
     </div>
-</section>
+  </section>
 
   <!-- Nucleo javascript de Boostrap -->
   <script src="js/jquery-3.2.1.min.js"></script>
