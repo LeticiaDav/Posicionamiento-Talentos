@@ -27,83 +27,7 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
 //echo $_SESSION['email'];
 ?>
 
-<!DOCTYPE html>
-<html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Posicionamiento de talentos</title>
-  <script src="js/jquery-3.2.1.min.js"></script>
-
-  <!-- Nucleo CSS de Boostrap -->
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <!-- Fuentes personalizadas -->
-  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- Estilos personalizados por Start Bootstrap - SB Admin v4.0.0-beta -->
-  <link href="css/styles.css" rel="stylesheet">
-</head>
-
-<body style="background-color: #F6F6F6;">
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <a class="navbar-brand mb-0 h1" href="#"><span class="white">Posicionamiento de Talentos</span></a>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <form action="buscaramigos.php" method="get" class="form-inline mr-5" id="buscar">
-            <div class="input-group">
-              <input class="form-control" type="text" placeholder="Buscar Amigos">
-            </div>
-          </form>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link mr-lg-2" id="SolicitudesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-fw fa-inverse fa-user-plus"></i>
-            Solicitudes
-            <span class="badge badge-danger">3</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="SolicitudesDropdown">
-            <h6 class="dropdown-header">Solicitudes De Amistad:</h6>
-            <a class="dropdown-item" href="perfil.php">
-              <strong>Usuario 1</strong>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="perfil.php">
-              <strong>Usuario 2</strong>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="perfil.php">
-              <strong>Usuario 3</strong>
-            </a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link mr-lg-2" id="NotificacionesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-fw fa-inverse fa-bell"></i>
-            Notificaciones
-            <span class="badge badge-danger">3</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="messagesDropdown">
-            <h6 class="dropdown-header">Notificaciones Nuevas:</h6>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle mr-lg-5" id="ConfDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Configuracion
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Configurar Cuenta</a>
-            <a class="dropdown-item" href="#">Configurar Perfil</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="signout.php">Cerrar Sesion</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
   <section class="publicacion">
     <div class="card">
@@ -152,27 +76,27 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
             <input type="hidden" name="CodPost" value="">
           </form>
           <!-- <ul class="comments-list">
-            <li class="comment">
-              <a class="pull-left" href="#">
-                <img class="avatar" src="img/no-profile.png" alt="avatar">
-              </a>
-              <div class="comment-body">
-                <div class="comment-heading">
-                  <h4 class="comment-user-name"><a href="#">Usuario 2</a></h4>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </li>
-          </ul> -->
-        </div>
+          <li class="comment">
+          <a class="pull-left" href="#">
+          <img class="avatar" src="img/no-profile.png" alt="avatar">
+        </a>
+        <div class="comment-body">
+        <div class="comment-heading">
+        <h4 class="comment-user-name"><a href="#">Usuario 2</a></h4>
       </div>
-    </article>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </li>
+</ul> -->
+</div>
+</div>
+</article>
 
-  </section>
+</section>
 
-  <!-- Nucleo javascript de Boostrap -->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+<!-- Nucleo javascript de Boostrap -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
