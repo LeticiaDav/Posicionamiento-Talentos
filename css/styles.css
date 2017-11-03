@@ -35,6 +35,28 @@ html {
   background-color: #1B1C1D;
 }
 
+.card{
+  box-shadow: 0px 1px 5px 0 rgba(34, 36, 38, 0.15);
+}
+#cabecera-card{
+  /*color de la cabecera del card*/
+  background-color: #fff !important;
+  color: #000000;
+}
+
+#pie-card{
+  /*color de la cabecera del card*/
+  background-color: #fff !important;
+  color: #000000;
+}
+
+.text-comentario{
+  width: 100%;
+  border: none;
+  resize: none;
+  padding: 10px;
+}
+
 #SolicitudesDropdown{
   color: #ffffff;
 }
@@ -56,12 +78,48 @@ html {
   max-width: 30px;
 }
 
-#botones ul{
-  list-style: none;
-  margin: 50px;
+.publicacion{
+  max-width: 40%;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 5px;
 }
-#botones li {
-  display:inline;
+.card-body {
+  padding: 0;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+.publicacion-info-perfil{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 7px 10px 7px 10px;
+}
+
+.publicacion .imagen-inicial-perfil{
+  width: 40px;
+  height: 40px;
+}
+
+.imagen-inicial-perfil{
+  width: 40px;
+  height: 40px;
+}
+
+.publicacion img{
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+a.nombre-usuario{
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
 }
 
 

@@ -35,8 +35,7 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Posicionamiento de talentos</title>
   <script src="js/jquery-3.2.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
   <!-- Nucleo CSS de Boostrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
   <!-- Fuentes personalizadas -->
@@ -45,7 +44,7 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body >
+<body style="background-color: #F6F6F6;">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <a class="navbar-brand mb-0 h1" href="#"><span class="white">Posicionamiento de Talentos</span></a>
@@ -61,29 +60,31 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle mr-lg-2" id="SolicitudesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link mr-lg-2" id="SolicitudesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-fw fa-inverse fa-user-plus"></i>
             Solicitudes
-            <span class="badge badge-notify">7</span>
+            <span class="badge badge-danger">3</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="SolicitudesDropdown">
             <h6 class="dropdown-header">Solicitudes De Amistad:</h6>
+            <a class="dropdown-item" href="perfil.php">
+              <strong>Usuario 1</strong>
+            </a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="perfil.php">
-              <strong>Jane Doe</strong>
-              <div class="dropdown-message small">Hola</div>
-              <ul id="botones" style="background-color:red;">
-                <li style="background-color:blue;"><a href="#" class="btn btn-sm btn-success" role="button">Aceptar</a></li>
-                <li><a href="#" class="btn btn-sm btn-info" role="button">Rechazar</a></li>
-              </ul>
+              <strong>Usuario 2</strong>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="perfil.php">
+              <strong>Usuario 3</strong>
             </a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle mr-lg-2" id="NotificacionesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link mr-lg-2" id="NotificacionesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-fw fa-inverse fa-bell"></i>
             Notificaciones
-            <span class="badge badge-notify">7</span>
+            <span class="badge badge-danger">3</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="messagesDropdown">
             <h6 class="dropdown-header">Notificaciones Nuevas:</h6>
@@ -103,6 +104,37 @@ verificar_sesion(); //Verificar si hay una sesion iniciada o no
       </ul>
     </div>
   </nav>
+
+<section class="publicacion">
+    <div class="card">
+      <div class="card-header" id="cabecera-card">
+        <table>
+          <tr>
+            <td><a href="#"><img src="img/no-profile.png" class="imagen-inicial-perfil" alt=""></a></td>
+            <td><a href="#" class="nombre-usuario">Usuario 1</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <textarea class="text-comentario" rows="2" id="comment"></textarea>
+          </div>
+        </form>
+      </div>
+        <div class="card-footer" id="pie-card">
+            <button class="btn btn-danger pull-right">Post</button>
+            <ul class="nav nav-pills">
+                <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
+                <li><a href="#"><i class="fa fa-camera"></i></a></li>
+                <li><a href="#"><i class=" fa fa-film"></i></a></li>
+                <li><a href="#"><i class="fa fa-microphone"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
   <!-- Nucleo javascript de Boostrap -->
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/popper/popper.min.js"></script>
