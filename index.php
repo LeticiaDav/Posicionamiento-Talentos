@@ -25,8 +25,10 @@ session_start();
 require('funciones.php');
 verificar_sesion(); //Verificar si hay una sesion iniciada o no
 //echo $_SESSION['email'];
+require('cabecera.php');
+require('upload-notice.php');
+require('noticias.php');
 ?>
-
 
 
 
