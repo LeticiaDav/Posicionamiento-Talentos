@@ -19,3 +19,26 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
+
+<section class="publicacion">
+  <div class="card">
+    <div class="card-header" id="cabecera-card">
+      <table>
+        <tr>
+          <td><a href="#"><img src="img/no-profile.png" class="imagen-inicial-perfil" alt=""></a></td>
+          <td><a href="#" class="nombre-usuario">Usuario 1</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="card-body">
+      <form action="<?php echo $_SERVER[PHP_SELF]; ?>" enctype="multipart/form-data" method="post">
+        <textarea class="text-comentario" rows="2" name="comentario" id="comentario" placeholder="Agregar una noticia"></textarea>
+      </form>
+    </div>
+    <div class="card-footer" id="pie-card">
+      <label for="archivo" class="fa fa-file-image-o fa-lg" style="cursor:pointer; margin-top:10px;"></label>
+      <input type="file" name="archivo" id="archivo" style="display:none;">
+      <button class="btn btn-success pull-right" name="publicar">Publicar</button>
+    </div>
+  </div>
+</section>
