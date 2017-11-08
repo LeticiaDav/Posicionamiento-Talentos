@@ -22,36 +22,48 @@ limitations under the License.
 -->
 
 <?php
-  function conexion_db($usuario, $contra){
-    try {
-      $con = new PDO('mysql:host=localhost; dbname=bd_pos_talent', $usuario, $contra);
-      return $con;
-    } catch (PDOException $e) {
-        return $e->getMessage();    
-    }
+function conexion_db($usuario, $contra){
+  try {
+    $con = new PDO('mysql:host=localhost; dbname=bd_pos_talent', $usuario, $contra);
+    return $con;
+  } catch (PDOException $e) {
+    return $e->getMessage();
   }
+}
 
-  function datos_vacios($datos){
-    $vacio = false;
-    $tamanio = count($datos);
-    for($i = 0; $i < $tamanio; $i++){
-      if(empty($datos[$i])){
-        $vacio = true;
-        break;
-      }
+function datos_vacios($datos){
+  $vacio = false;
+  $tamanio = count($datos);
+  for($i = 0; $i < $tamanio; $i++){
+    if(empty($datos[$i])){
+      $vacio = true;
+      break;
     }
-    return $vacio;
   }
+  return $vacio;
+}
 
-  function limpiar($datos){
-    $tamanio = count($datos);
-    for($i = 0; $i < $tamanio; $i++){
-      if($i != 2){
-        $datos[$i] = htmlspecialchars($datos[$i]);
-        $datos[$i] = trim($datos[$i]);
-        $datos[$i] = stripcslashes($datos[$i]);
-      }
+function limpiar($datos){
+  $tamanio = count($datos);
+  for($i = 0; $i < $tamanio; $i++){
+    if($i != 2){
+      $datos[$i] = htmlspecialchars($datos[$i]);
+      $datos[$i] = trim($datos[$i]);
+      $datos[$i] = stripcslashes($datos[$i]);
     }
-    return $datos;
   }
- ?>
+  return $datos;
+}
+
+
+/*
+Verificar la sesion de un usuario
+Si un usuario no ha iniciado sesion
+redirigira a la pagina de login.php
+*/
+function verificar_sesion(){
+  if(!isset($_SESSION['id'])){
+    header('location: login.php');
+  }
+}
+?>
