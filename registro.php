@@ -1,6 +1,6 @@
 
 <!--
-#registro.php - 1.0.1
+#registro.php - 0.1.3
 
 https://github.com/Genesisj96Dev/Posicionamiento-Talentos
 

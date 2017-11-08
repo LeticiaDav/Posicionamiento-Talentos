@@ -1,5 +1,5 @@
 <!--
-#dashboard.php - 1.0.1
+#dashboard.php - 0.2.0
 
 https://github.com/Genesisj96Dev/Posicionamiento-Talentos
 

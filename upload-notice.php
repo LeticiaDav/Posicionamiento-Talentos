@@ -1,5 +1,5 @@
 <!--
-#upload-notice.php - 1.0.0
+#upload-notice.php - 0.1.1
 
 https://github.com/Genesisj96Dev/Posicionamiento-Talentos
 
